@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../assets/style.css">
+    <title>User Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Register</h2>
+        <form action="registeraction.php" method="post">
+          <label>First Name:</label><br>
+          <input type="text" name="firstname" required><br><br>
+
+          <label>Last Name:</label><br>
+          <input type="text" name="lastname" required><br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email" required><br><br>
+
+            <label>Phone:</label><br>
+            <input type="text" name="phone" required><br><br>
+
+            <label>Password:</label><br>
+            <input type="password" name="password" required><br><br>
+
+            <label>User Type:</label><br>
+            <select name="type" required>
+                <option value="student">Student</option>
+               <option value="teacher">Teacher</option>
+               <option value="admin">Admin</option>
+            </select><br><br>
+
+            <input type="submit" value="Register">
+        </form>
+        <br>
+        <a href="login.html">Already have an account? Login</a>
+    </div>
+</body>
+</html>
